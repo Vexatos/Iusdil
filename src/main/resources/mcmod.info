@@ -1,0 +1,17 @@
+[
+{
+  "modid": "iusdil",
+  "name": "Instructions unclear, sword dropped into lava.",
+  "description": "In case you are too bad at this game.",
+  "version": "${version}",
+  "credits": "Lots of thanks to EnderIO code.",
+  "logoFile": "",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [ "Vexatos" ],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": []
+}
+]
