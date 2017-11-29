@@ -2,7 +2,6 @@ package vexatos.iusdil.enchantment;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -30,7 +29,7 @@ import java.util.Map;
 public class EnchantmentSoulbound extends IusdilEnchantment {
 
 	public EnchantmentSoulbound() {
-		super("soulbound", Rarity.VERY_RARE, EnumEnchantmentType.ALL, EntityEquipmentSlot.values());
+		super("soulbound", Rarity.VERY_RARE, Enchantments.ANYTHING, EntityEquipmentSlot.values());
 	}
 
 	@Override

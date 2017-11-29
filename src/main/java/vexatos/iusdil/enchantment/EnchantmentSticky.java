@@ -1,7 +1,6 @@
 package vexatos.iusdil.enchantment;
 
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
@@ -17,7 +16,7 @@ import vexatos.iusdil.util.EnchantUtils;
 public class EnchantmentSticky extends IusdilEnchantment {
 
 	public EnchantmentSticky() {
-		super("sticky", Enchantment.Rarity.RARE, EnumEnchantmentType.ALL, EntityEquipmentSlot.values());
+		super("sticky", Enchantment.Rarity.RARE, Enchantments.ANYTHING, EntityEquipmentSlot.values());
 	}
 
 	@Override
