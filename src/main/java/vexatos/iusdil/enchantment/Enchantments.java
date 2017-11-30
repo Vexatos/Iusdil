@@ -8,6 +8,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import vexatos.iusdil.reference.Config;
 import vexatos.iusdil.reference.Mods;
 
+import static java.util.stream.Stream.concat;
+import static java.util.stream.Stream.of;
+import static net.minecraft.creativetab.CreativeTabs.TOOLS;
+
 /**
  * @author Vexatos
  */
@@ -20,6 +24,7 @@ public class Enchantments {
 
 	public static void init() {
 		ANYTHING = EnumHelper.addEnchantmentType(Mods.Iusdil + ":anything", item -> true);
+		TOOLS.setRelevantEnchantmentTypes(concat(of(TOOLS.getRelevantEnchantmentTypes()), of(ANYTHING)).toArray(EnumEnchantmentType[]::new));
 
 		if(Config.EnableSoulbound) {
 			soulbound = new EnchantmentSoulbound();
